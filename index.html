@@ -12,80 +12,108 @@
     <section class="calc_wrap">
         <div class="left_column">
             <div class="what_to_count clearfix">
-                <span>1</span>
-                <h2>Что рассчитать?</h2>
-                <div class="chose">
-                    <select name="" id="">
-                        <option value="windows">Окна</option>
-                        <option value="doors">Двери</option>
-                    </select>
+                <div>
+                    <span>1</span>
+                    <h2>Что рассчитать?</h2>
                 </div>
-                <div class="choose_window_type">
-                    <ul>
-                        <li><img src="img/win_1.png" alt="" title="Односекционное окно"></li>
-                        <li><img src="img/win_2.png" alt="" title="Двухсекционное окно"></li>
-                        <li><img src="img/win_3.png" alt="" title="Трёхсекционное окно"></li>
-                        <li><img src="img/win_4.png" alt="" title="Четырёхсекционное окно"></li>
-                    </ul>
+                <div class="what_to_count_inside">
+                    <div class="chose">
+                        <select name="" id="window_door">
+                            <option value="windows">Окна</option>
+                            <option value="doors">Двери</option>
+                        </select>
+                    </div>
+                    <div class="choose_window_type">
+                        <ul>
+                            <li><img src="img/win_1.png" alt="" title="Односекционное окно"></li>
+                            <li><img src="img/win_2.png" alt="" title="Двухсекционное окно"></li>
+                            <li><img src="img/win_3.png" alt="" title="Трёхсекционное окно"></li>
+                            <li><img src="img/win_4.png" alt="" title="Четырёхсекционное окно"></li>
+                        </ul>
+                    </div>
+                    <div class="choose_door_type">
+                        <ul>
+                            <li><img src="img/door_1.png" alt="" title="Дверь"></li>
+                            <li><img src="img/door_2.png" alt="" title="Односекционное окно и дверь"></li>
+                            <li><img src="img/door_3.png" alt="" title="Двухсекционное окно и дверь"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="what_to_count_add clearfix">
-                <span>2</span>
-                <h2>Дополнительные характеристики</h2>
-                <label for="profil_type">Тип профиля</label>
-                <select name="" id="profil_type">
-                    <option value="Rehau_Blitz">Rehau Blitz</option>
-                    <option value="Rehau_Sib">Rehau Sib</option>
-                    <option value="Rehau_Delight">Rehau Delight</option>
-                    <option value="Rehau_Brilliant">Rehau Brilliant</option>
-                    <option value="Rehau_Intelio">Rehau Intelio</option>
-                    <option value="Rehau_Geneo">Rehau Geneo</option>
-                </select>
-                <label for="glass">Стеклопакет</label>
-                <select name="" id="glass">
-                    <option value="normal">Стандартный</option>
-                    <option value="heat_protect">Теплосберегающий</option>
-                    <option value="sun_protect">Солнцезащитный</option>
-                    <option value="noise_protect">Шумозащитный</option>
-                </select>
-                <label for="furniture">Фурнитура</label>
-                <select name="" id="furniture">
-                    <option value="roto">Roto</option>
-                </select>
-                <label for="width_under">Ширина подоконника</label>
-                <select name="" id="width_under">
-                    <option value="none">Нет</option>
-                    <option value="w_u150">150</option>
-                    <option value="w_u200">200</option>
-                    <option value="w_u250">250</option>
-                    <option value="w_u300">300</option>
-                    <option value="w_u350">350</option>
-                    <option value="w_u400">400</option>
-                    <option value="w_u450">450</option>
-                    <option value="w_u500">500</option>
-                </select>
-                <label for="width_2">Ширина отлива</label>
-                <select name="" id="width_2">
-                    <option value="none">Нет</option>
-                    <option value="w_o100">менее 100мм</option>
-                    <option value="w_o150">100-150мм</option>
-                    <option value="w_o200">150-200мм</option>
-                    <option value="w_o250">200-250мм</option>
-                    <option value="w_o400">250-400мм</option>
-                </select>
-                <label for="install">Установка</label>
-                <select name="" id="install">
-                    <option value="none">Нет</option>
-                    <option value="wood">Деревянный дом</option>
-                    <option value="brick">Кирпичный дом</option>
-                    <option value="panel">Панельный дом</option>
-                </select>
+                <div>
+                    <span>2</span>
+                    <h2>Дополнительные характеристики</h2>
+                </div>
+                <div class="what_to_count_add_inside">
+                    <div>
+                        <label for="profil_type">Тип профиля</label>
+                        <select name="" id="profil_type">
+                            <option value="Rehau_Blitz">Rehau Blitz</option>
+                            <option value="Rehau_Sib">Rehau Sib</option>
+                            <option value="Rehau_Delight">Rehau Delight</option>
+                            <option value="Rehau_Brilliant">Rehau Brilliant</option>
+                            <option value="Rehau_Intelio">Rehau Intelio</option>
+                            <option value="Rehau_Geneo">Rehau Geneo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="glass">Стеклопакет</label>
+                        <select name="" id="glass">
+                            <option value="normal">Стандартный</option>
+                            <option value="heat_protect">Теплосберегающий</option>
+                            <option value="sun_protect">Солнцезащитный</option>
+                            <option value="noise_protect">Шумозащитный</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="furniture">Фурнитура</label>
+                        <select name="" id="furniture">
+                            <option value="roto">Roto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="width_under">Ширина подоконника</label>
+                        <select name="" id="width_under">
+                            <option value="none">Нет</option>
+                            <option value="w_u150">150</option>
+                            <option value="w_u200">200</option>
+                            <option value="w_u250">250</option>
+                            <option value="w_u300">300</option>
+                            <option value="w_u350">350</option>
+                            <option value="w_u400">400</option>
+                            <option value="w_u450">450</option>
+                            <option value="w_u500">500</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="width_2">Ширина отлива</label>
+                        <select name="" id="width_2">
+                            <option value="none">Нет</option>
+                            <option value="w_o100">менее 100мм</option>
+                            <option value="w_o150">100-150мм</option>
+                            <option value="w_o200">150-200мм</option>
+                            <option value="w_o250">200-250мм</option>
+                            <option value="w_o400">250-400мм</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="install">Установка</label>
+                        <select name="" id="install">
+                            <option value="none">Нет</option>
+                            <option value="wood">Деревянный дом</option>
+                            <option value="brick">Кирпичный дом</option>
+                            <option value="panel">Панельный дом</option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
         </div>
         <div class="right_column">
             <span>3</span>
             <h2>Задайте параметры</h2>
+            <button id = 'price' onclick="price()">Узнать стоимость</button>
         </div>
     </section>
 </div>

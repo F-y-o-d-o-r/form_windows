@@ -1,3 +1,5 @@
-/**
- * Created by pfyod on 28.09.2017.
- */
+/**Created by fyodor on 28.09.20 fyodor.work@gmail.com**/
+
+function price() {
+    alert(1)
+}
