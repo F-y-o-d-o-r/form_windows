@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
+body {
+    font-family: 'Cuprum', sans-serif;
+    color: #2E2E2E;
+}
+
+h1 {
+    font-weight:normal;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight:normal;
+    padding: 5px 0 5px 36px;
+}
+
+.what_to_count span,
+.what_to_count_add span,
+.right_column span {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: #80c18c;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+
+.what_to_count span::after,
+.what_to_count_add span::after,
+.right_column span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: solid transparent;
+    border-width: 15px 10px;
+    border-left-color: #80c18c
+}
+
+.wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    max-width: 1232px;
+    width: 100%;
+}
+
+.calc_wrap {
+    width: 100%;
+    position: relative;
+}
+
+.left_column,
+.right_column {
+    width: 49%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.right_column {
+    margin-left:2%;
+    padding: 10px;
+    background-color: #F2F2F2;
+
+}
+
+.what_to_count {
+    padding: 10px;
+    position: relative;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    border-radius: 3px;
+    padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.chose {
+    width: 50%;
+    float: left;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+}
+
+.choose_window_type {
+    width: 50%;
+    float: left;
+}
+
+.choose_window_type li {
+    display: inline-block;
+    margin-right:5px;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.what_to_count_add {
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.what_to_count_add label {
+    width: 30%;
+    float: left;
+    line-height: 38px;
+    margin-bottom:10px;
+}
+
+.what_to_count_add select {
+    width: 70%;
+    float: right;
+    margin-bottom:10px;
+}
