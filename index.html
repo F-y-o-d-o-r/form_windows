@@ -111,9 +111,24 @@
 
         </div>
         <div class="right_column">
-            <span>3</span>
-            <h2>Задайте параметры</h2>
-            <button id = 'price' onclick="price()">Узнать стоимость</button>
+            <div class="parameters_name">
+                <div>
+                    <span>3</span>
+                    <h2>Задайте параметры</h2>
+                </div>
+                <img class="img_show" src="img/calc-icon-click.png"/>
+            </div>
+            <div class="choose_pic">
+                <div class="size">
+                    <div class="width"><input type="text" value="800" id="width"></div>
+                    <img src="img/windows_choose/leaf-x.png">
+                    <div class="height"><input type="text" value="1500" id="height"></div>
+                </div>
+            </div>
+            <div class="price">
+                <button id='price' onclick="price()">Узнать стоимость</button>
+                <p></p>
+            </div>
         </div>
     </section>
 </div>
