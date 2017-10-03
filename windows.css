@@ -78,9 +78,9 @@ h2 {
     padding: 10px;
     background-color: #F2F2F2;
     display: flex;
-    flex-direction:column;
-    flex-grow: 2;
-    justify-content:space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .what_to_count {
@@ -193,8 +193,9 @@ ul {
 
 @media screen and (max-width: 960px) {
     .calc_wrap {
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .right_column {
         margin-left: 0;
         margin-top: 20px;
@@ -221,6 +222,7 @@ ul {
     font-size: 12px;
     padding: 10px 0;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #price:hover {
@@ -229,15 +231,16 @@ ul {
 
 .parameters_name {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .choose_pic {
-
     align-self: center;
-
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .choose_pic div.width {
@@ -247,24 +250,27 @@ ul {
     position: absolute;
     border-left: 1px solid #d0d0d0;
     border-right: 1px solid #d0d0d0;
-    top:-30px;
-    left:0;
+    top: -30px;
+    left: 0;
 }
 
 .choose_pic div.height {
     content: "";
     height: 200px;
-    width: 30px;
+    width: 40px;
     position: absolute;
     border-top: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
-    top:0px;
-    right:-30px;
+    top: 0px;
+    left: -40px;
 }
 
 .width input,
-.height input {
-    width: 50px;
+.height input,
+#height_all_window,
+#height_all_door,
+#height_door {
+    width: 30px;
     border-radius: 5px;
     text-align: center;
 }
@@ -274,13 +280,86 @@ ul {
 }
 
 .height {
-    padding-top: 90%;
+    padding-top: 100px;
     box-sizing: border-box;
-    padding-left: 5px;
+}
+
+#height_all_window,
+#height_all_door {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+
+#image_window:after {
+    content: '';
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 200px;
+    border-left: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    display: none;
+}
+
+#image_window input {
+    display: none;
 }
 
 .price {
     display: flex;
-    justify-content:space-between;
-    align-items: center;;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rem1,
+#rem2,
+#rem3,
+#rem_door1,
+#rem_door2 {
+    display: none;
+}
+
+#door_window {
+    display: none;
+    position: relative;
+}
+
+
+
+#door_window input {
+    margin-top: 100px;
+}
+
+
+/*change images on click*/
+.choose_window_type label,
+.choose_door_type label {
+    cursor: pointer;
+}
+
+#window_1:checked ~ label[for=window_1] img,
+#window_2:checked ~ label[for=window_2] img,
+#window_3:checked ~ label[for=window_3] img,
+#window_4:checked ~ label[for=window_4] img,
+#door_1:checked ~ label[for=door_1] img,
+#door_2:checked ~ label[for=door_2] img,
+#door_3:checked ~ label[for=door_3] img {
+    outline: 2px solid #60A66C;
+}
+
+.size {
+    margin-bottom: 100px;
+}
+
+#height_door {
+    position: absolute;
+    left:100%;
+    top:0;
+}
+
+#rem_door1,
+#rem_door2 {
+    margin-bottom:100px;
 }

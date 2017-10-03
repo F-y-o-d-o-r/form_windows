@@ -25,17 +25,48 @@
                     </div>
                     <div class="choose_window_type">
                         <ul>
-                            <li><img src="img/win_1.png" alt="" title="Односекционное окно"></li>
-                            <li><img src="img/win_2.png" alt="" title="Двухсекционное окно"></li>
-                            <li><img src="img/win_3.png" alt="" title="Трёхсекционное окно"></li>
-                            <li><img src="img/win_4.png" alt="" title="Четырёхсекционное окно"></li>
+                            <li>
+                                <input type="radio" id="window_1" name="window_change" checked hidden
+                                       title="Односекционное окно">
+                                <label for="window_1" onclick="num1_win()"><img src="img/win_1.png"
+                                                                                title="Односекционное окно"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="window_2" name="window_change" hidden
+                                       title="Двухсекционное окно">
+                                <label for="window_2" onclick="num2_win()"><img src="img/win_2.png" alt=""
+                                                                                title="Двухсекционное окно"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="window_3" name="window_change" hidden
+                                       title="Трёхсекционное окно">
+                                <label for="window_3" onclick="num3_win()"><img src="img/win_3.png" alt=""
+                                                                                title="Трёхсекционное окно"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="window_4" name="window_change" hidden
+                                       title="Четырёхсекционное окно">
+                                <label for="window_4" onclick="num4_win()"><img src="img/win_4.png" alt=""
+                                                                                title="Четырёхсекционное окно"></label>
+                            </li>
                         </ul>
                     </div>
                     <div class="choose_door_type">
                         <ul>
-                            <li><img src="img/door_1.png" alt="" title="Дверь"></li>
-                            <li><img src="img/door_2.png" alt="" title="Односекционное окно и дверь"></li>
-                            <li><img src="img/door_3.png" alt="" title="Двухсекционное окно и дверь"></li>
+                            <li>
+                                <input type="radio" id="door_1" name="door_change" hidden checked title="Дверь">
+                                <label for="door_1" onclick="num1_door()"><img src="img/door_1.png"
+                                                                               title="Дверь"></label></li>
+                            <li><input type="radio" id="door_2" name="door_change" hidden
+                                       title="Односекционное окно и дверь">
+                                <label for="door_2" onclick="num2_door()"><img src="img/door_2.png"
+                                                                               title="Односекционное окно и дверь"></label>
+                            </li>
+                            <li><input type="radio" id="door_3" name="door_change" hidden
+                                       title="Двухсекционное окно и дверь">
+                                <label for="door_3" onclick="num3_door()"><img src="img/door_3.png"
+                                                                               title="Двухсекционное окно и дверь"></label>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -120,18 +151,33 @@
             </div>
             <div class="choose_pic">
                 <div class="size">
-                    <div class="width"><input type="text" value="800" id="width"></div>
-                    <img src="img/windows_choose/leaf-x.png">
-                    <div class="height"><input type="text" value="1500" id="height"></div>
+                    <div class="width"><input type="text" value="800" id="width" title="Ширина окна"></div>
+                    <div id="image_window"><input type="text" value="0" id="height_all_window" title="Общая ширина">
+                        <img class="window_1_out" id="rem0" src="img/windows_choose/leaf-x.png" onclick="imgsrc()">
+                        <img class="window_1_out" id="rem1" src="img/windows_choose/leaf-x.png" onclick="imgsrc1()">
+                        <img class="window_1_out" id="rem2" src="img/windows_choose/leaf-x.png" onclick="imgsrc2()">
+                        <img class="window_1_out" id="rem3" src="img/windows_choose/leaf-x.png" onclick="imgsrc3()">
+                    </div>
+                    <div id="door_window"><input type="text" value="0" id="height_all_door" title="Общая ширина">
+                        <img class="window_1_out" id="rem_door1" src="img/windows_choose/leaf-x.png"
+                             onclick="imgsrc4()">
+                        <img class="window_1_out" id="rem_door2" src="img/windows_choose/leaf-x.png"
+                             onclick="imgsrc5()">
+                        <img class="window_1_out" id="rem_door0" src="img/door_choose/door-l.png" onclick="imgsrc6()">
+                        <input type="text" value="0" id="height_door" title="Высота двери">
+                    </div>
+                    <div class="height"><input type="text" value="1500" id="height" title="Высота окна"></div>
                 </div>
+
             </div>
             <div class="price">
                 <button id='price' onclick="price()">Узнать стоимость</button>
-                <p></p>
             </div>
         </div>
     </section>
+    <p></p>
 </div>
+
 <script src="windows.js"></script>
 </body>
 </html>
