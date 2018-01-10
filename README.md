@@ -1,1 +1,1 @@
-Form for chosing type of windows ore doors
+Form for chosing type of windows or doors
